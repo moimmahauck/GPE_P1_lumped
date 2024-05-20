@@ -1,1 +1,1 @@
-# GPE_P1_lumped
+Matlab code to reproduce the numerical experiments of the paper "Uniqueness, Positivity, and Global Convergence of the Discretized Gross-Pitaevskii Ground State" by M. Hauck, Y. Liang, D. Peterseim. If you use this code, please cite the paper.
