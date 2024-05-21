@@ -1,11 +1,11 @@
-function v=simpvol(mesh)
+function v = simpvol(mesh)
     % computes volume of the mesh elements of mesh
     %
     % Input:
     %     mesh:  simplicial mesh 
     %   
     % Output: 
-    %      vlo:  volume of mesh elements
+    %        v:  vector of volumes of mesh elements
     %
     % M. Hauck, Y. Liang, D. Peterseim
 
