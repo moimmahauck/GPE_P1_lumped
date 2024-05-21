@@ -7,12 +7,12 @@ function [mesh,P,P0,P1dg] = refine(mesh)
     % 
     % Output: 
     %     mesh:  new mesh after refinement
-    %        P:  transformation matrix
-    %            extrapolates nodal grid functions (continuous) from the old to the refined mesh
-    %       P0:  transformation matrix
-    %            extrapolates element grid functions from the old to the refined mesh
-    %     P1dg:  transformation matrix
-    %            extrapolates element P1-functions (discontinuous) from the old to the refined mesh
+    %        P:  Prolongation matrix P1
+    %            extrapolates P1 grid functions from the coarse to the fine mesh
+    %       P0:  Prolongation matrix P0
+    %            extrapolates P0 mesh functions from the coarse to the fine mesh
+    %     P1dg:  Prolongation matrix P1dg
+    %            extrapolates P1dg mesh functions from the coarse to the fine mesh
     %
     % M. Hauck, Y. Liang, D. Peterseim
 
