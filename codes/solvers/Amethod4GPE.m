@@ -1,7 +1,8 @@
 function [u,flag,lam,erg,res] = Amethod4GPE(T,A0,M0,E,kappa,u0,t,tol,maxit,type)
-    % performs Amethod which is a Sobolev gradient flow method with a
-    % weighted metric (see [HP20]) to practically solve the discrete 
-    % minimization for the discrete ground state
+    % performs Amethod which is a Sobolev gradient flow method with an energy-adaptive metric 
+    % of [Henning/Peterseim SIAM J. NUMER. ANAL. 58(3):1744-1772, 2020] 
+    % (see also Altmann/Peterseim/Stykel M2AN 56:1629-1653, 2022]
+    % to reliably and efficiently solve the discrete minimization for the discrete ground state
     %
     % Input:
     %        T:  simplicial mesh with points p and elements t
