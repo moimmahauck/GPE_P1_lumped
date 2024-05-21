@@ -1,16 +1,18 @@
 function [mesh,P,P0,P1dg] = refine(mesh)
-    % refines the current triangulation by dividing each marked element
+    % refines the current triangulation by dividing each element
     % into 2^dim congruent elements (red refinement)
     %
     % Input:
     %     mesh:  current mesh 
-    %   marker:  indices of triangles that should be refined (optional)
-    %            i \in marker => triangle i will be refined
     % 
     % Output: 
     %     mesh:  new mesh after refinement
     %        P:  transformation matrix
-    %            extrapolates grid functions from the old to the refined mesh
+    %            extrapolates nodal grid functions (continuous) from the old to the refined mesh
+    %       P0:  transformation matrix
+    %            extrapolates element grid functions from the old to the refined mesh
+    %     P1dg:  transformation matrix
+    %            extrapolates element P1-functions (discontinuous) from the old to the refined mesh
     %
     % M. Hauck, Y. Liang, D. Peterseim
 
